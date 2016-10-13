@@ -21,7 +21,7 @@ public class Harrisoninstructor implements Serializable {
 
 	private String department;
 
-	private BigDecimal officenumber;
+	private float officenumber;
 
 	//bi-directional many-to-one association to Harrisonclass
 	@OneToMany(mappedBy="harrisoninstructor")
@@ -51,11 +51,11 @@ public class Harrisoninstructor implements Serializable {
 		this.department = department;
 	}
 
-	public BigDecimal getOfficenumber() {
+	public float getOfficenumber() {
 		return this.officenumber;
 	}
 
-	public void setOfficenumber(BigDecimal officenumber) {
+	public void setOfficenumber(float officenumber) {
 		this.officenumber = officenumber;
 	}
 

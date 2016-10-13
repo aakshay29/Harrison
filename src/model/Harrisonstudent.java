@@ -21,7 +21,7 @@ public class Harrisonstudent implements Serializable {
 
 	private String major;
 
-	private BigDecimal yearofentry;
+	private float yearofentry;
 
 	//bi-directional many-to-one association to Harrisonenrollment
 	@OneToMany(mappedBy="harrisonstudent")
@@ -51,11 +51,11 @@ public class Harrisonstudent implements Serializable {
 		this.major = major;
 	}
 
-	public BigDecimal getYearofentry() {
+	public float getYearofentry() {
 		return this.yearofentry;
 	}
 
-	public void setYearofentry(BigDecimal yearofentry) {
+	public void setYearofentry(float yearofentry) {
 		this.yearofentry = yearofentry;
 	}
 

@@ -26,7 +26,7 @@ public class Harrisonuser implements Serializable {
 	private String password;
 
 	@Column(name="\"ROLE\"")
-	private BigDecimal role;
+	private float role;
 
 	//bi-directional many-to-one association to Harrisoninstructor
 	@OneToMany(mappedBy="harrisonuser")
@@ -71,11 +71,11 @@ public class Harrisonuser implements Serializable {
 		this.password = password;
 	}
 
-	public BigDecimal getRole() {
+	public float getRole() {
 		return this.role;
 	}
 
-	public void setRole(BigDecimal role) {
+	public void setRole(float role) {
 		this.role = role;
 	}
 
